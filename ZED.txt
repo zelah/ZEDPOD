@@ -1224,11 +1224,7 @@ comment: (+) 1 2
 comment: definitions for the primitives
 "#t"
 (002) "quote"
-      (010) "begin"
-            (003) "define-macro" 
-                  (003) let* "a" "b"
-                  (002) "quasiquote" (003) "let*" (002) "unquote" "a"
-                                                  (002) "unquote" "b"
+      (009) "begin"
             (003) "define-macro"
                   (003) or "a" "b"
                   (002) "quasiquote" (003) "or" (002) "unquote" "a"
@@ -1357,7 +1353,14 @@ comment: "program" is a list of combined clauses -> returns a symbol-arity hash 
 "#t"
 (003) "append" (003) "map" arity-hash1 "program"
                (003) "append"
-                     (002) "list" (003) "cons" "'ZED001" 1
+                     (007) 
+                       "list"
+                       (003) "cons" "'ZED001" 1
+                       (003) "cons" "'ZEDor" 2
+                       (003) "cons" "'ZEDand" 2
+                       (003) "cons" "'ZEDse" 2
+                       (003) "cons" "'ZEDc" 2
+                       (003) "cons" "'ZEDquote" 1
                      (099) "list"
                            (003) "cons" "'ZED002" 2
                            (003) "cons" "'ZED003" 3
@@ -1667,17 +1670,15 @@ comment:
 (c1)
 comment:
 "#t"
-(006) "let*" 
+(005) "let*" 
       "((i" "(open-input-file" ""GAMBIT1.txt")))"
-      (002) "read-line" "i"
       (002) "read-all!" "i"
 
 (c2)
 comment:
 "#t"
-(006) "let*" 
+(005) "let*" 
       "((i" "(open-input-file" ""GAMBIT2.txt")))"
-      (002) "read-line" "i"
       (002) "read-all!" "i"
 
 (g1)
