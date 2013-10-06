@@ -66,6 +66,7 @@ comment:
                      (combine-program-clauses)
                      (by-three)
                      (debug-sentences)
+          (function-sort)
                      (discard-comments)
                      (sentences)
                      (leading-newline)
@@ -97,7 +98,7 @@ comment:
 comment:
 "#t"
 (comp1aaaa) "gambit"
-            (programize) "combined"
+            (programize) (drr) "combined"
                          (arity-hash) "combined"
                                  
  
@@ -110,6 +111,7 @@ comment:
                      (combine-program-clauses)
                      (by-three)
                      (read-sentences)
+          (function-sort)
                      (discard-comments)
                      (sentences)
                      (leading-newline)
@@ -260,13 +262,13 @@ comment:
  
 (merge) "comparator" "list1" "list2"
 comment:
-(002) "null?" "list1"
-"list2"
+(002) "null?" "list2"
+"list1"
  
 (merge) "comparator" "list1" "list2"
 comment:
-(002) "null?" "list2"
-"list1"
+(002) "null?" "list1"
+"list2"
  
 (merge) "comparator" "list1" "list2"
 comment:
@@ -290,13 +292,13 @@ comment:
  
 (sentence-less?) "sentence1" "sentence2"
 comment:
-(002) "null?" "sentence1"
-"#t"
+(002) "null?" "sentence2"
+"#f"
  
 (sentence-less?) "sentence1" "sentence2"
 comment:
-(002) "null?" "sentence2"
-"#f"
+(002) "null?" "sentence1"
+"#t"
  
 (sentence-less?) "sentence1" "sentence2"
 comment:
@@ -1728,16 +1730,18 @@ comment:
 comment:
 "#t"
 (007) "let*" 
-      "((i" "(open-input-file" "(string-append" "(ROOT)" 
-                                                "(GAMBIT1)))))"
+      "((i" "(open-input-file"
+              "(string-append" "(ROOT)" 
+                               "(GAMBIT1)))))"
       (002) "read-all!" "i"
  
 (c2)
 comment:
 "#t"
 (007) "let*" 
-      "((i" "(open-input-file" "(string-append" "(ROOT)" 
-                                                "(GAMBIT2)))))"
+      "((i" "(open-input-file" 
+              "(string-append" "(ROOT)" 
+                               "(GAMBIT2)))))"
       (002) "read-all!" "i"
  
 (g1)
@@ -1749,5 +1753,6 @@ comment:
 comment:
 "#t"
 (002) "load" (003) "string-append" (ROOT) (GAMBIT2)
+ 
  
  
