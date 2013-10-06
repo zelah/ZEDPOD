@@ -13,9 +13,9 @@
 (define-macro (ZEDquote a) `(quote ,a))
  
 (define ZEDnil '())
-
+ 
 (define ZEDerr 'err)
-
+ 
 (define (filter predicate list) (if (null? list) ZEDnil (if (predicate (car list)) (cons (car list) (filter predicate (cdr list))) (filter predicate (cdr list)))))
  
 (define (comp-c4 TEMP GAMBIT) (cond ((ZEDalways) (write-all! GAMBIT (strip (read-all! TEMP)))) (else ZEDerr)))
@@ -532,7 +532,8 @@
  
 (define (g2)
   (load (string-append (ROOT) (GAMBIT2))))
-
+ 
 (define (ROOT) "")
 (define (GAMBIT1) "GAMBIT1.txt")
 (define (GAMBIT2) "GAMBIT2.txt")
+ 
