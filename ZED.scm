@@ -1,4 +1,4 @@
-;;; test.scm
+;;; ZED.scm
  
 (comp1baaa) "gambit" "programized"
 comment:
@@ -1720,27 +1720,22 @@ comment:
 (c1)
 comment:
 "#t"
-(007) "let*" 
-      "((i" "(open-input-file"
-              "(string-append" "(ROOT)" 
-                               "(GAMBIT1)))))"
+(005) "let*" "((i" "(open-input-file" "(GAMBIT1))))"
       (002) "read-all!" "i"
  
 (c2)
 comment:
 "#t"
-(007) "let*" 
-      "((i" "(open-input-file" 
-              "(string-append" "(ROOT)" 
-                               "(GAMBIT2)))))"
+(005) "let*" "((i" "(open-input-file" "(GAMBIT2))))"
       (002) "read-all!" "i"
  
 (g1)
 comment:
 "#t"
-(002) "load" (003) "string-append" (ROOT) (GAMBIT1)
+(002) "load" (GAMBIT1)
  
 (g2)
 comment:
 "#t"
-(002) "load" (003) "string-append" (ROOT) (GAMBIT2)
+(002) "load" (GAMBIT2)
+ 
