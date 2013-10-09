@@ -1135,42 +1135,42 @@ comment:
 comment:
 "#t"
 nil
-
+ 
 (push) "object" "stack"
 comment:
 "#t"
 (003) "cons" "object" "stack"
-
+ 
 (pop) "stack"
 comment:
 "#t"
 (002) "cdr" "stack"
-
+ 
 (top) "stack"
 comment:
 "#t"
 (002) "car" "stack"
-
+ 
 (schemefy) "expression" "arity-hash"
 comment:
 "#t"
-(drr) (002) "list"
+(002) "list"
       (schemefy1) (002) "reverse" "expression" 
                   "arity-hash"
                   (stack)
-
+ 
 (schemefy1) "expression" "arity-hash" "stack"
 comment:
 (002) "zero?" (002) "length" "expression"
 (top) "stack"
-
+ 
 (schemefy1) "expression" "arity-hash" "stack"
 comment:
 (002) "not" (application?) "expression"
 (schemefy1) (pop) "expression"
             "arity-hash"
             (push) (top) "expression" "stack"
-
+ 
 (schemefy1) "expression" "arity-hash" "stack"
 comment:
 "#t"
@@ -1178,7 +1178,7 @@ comment:
              "arity-hash"
              "stack"
              (function) "expression"
-
+ 
 (schemefy1a) "expression" "arity-hash" "stack"
              "function"
 comment:
@@ -1188,7 +1188,7 @@ comment:
               "stack"
               "function"
               (arity) "arity-hash" "function"
-
+ 
 (schemefy1aa) "expression" "arity-hash" "stack"
               "function" "arity"
 comment:
@@ -1212,18 +1212,18 @@ comment:
                                     "stack"
                    (zed->gambit)
                      (tails) "arity" "stack"
-
+ 
 (function) "expression"
 comment:
 "#t"
 (002) "caar" "expression"
-
+ 
 (application?) "expression"
 comment:
 "#t"
 (003) "and" (002) "not" (002) "null?" "expression"
             (002) "pair?" (002) "car" "expression"
-
+ 
 (primitives)
 comment:
 "#t"
@@ -1677,23 +1677,23 @@ comment:
 comment:
 "#t"
 (003) "append" (flatten) (002) "car" "object" (flatten) (002) "cdr" "object"
-
+ 
 (my-flatten) "object"
 comment:
 (002) "not" (002) "pair?" "object"
 "object"
-
+ 
 (my-flatten) "object"
 comment:
 (002) "null?" (002) "car" "object"
 (my-flatten) (002) "cdr" "object"
-
+ 
 (my-flatten) "object"
 comment:
 (002) "pair?" (002) "car" "object"
 (003) "append" (my-flatten) (002) "car" "object"
                (my-flatten) (002) "cdr" "object"
-
+ 
 (my-flatten) "object"
 comment:
 "#t"
@@ -1744,6 +1744,3 @@ comment:
 comment:
 "#t"
 (002) "load" (003) "string-append" (ROOT) (GAMBIT2)
- 
- 
- 
