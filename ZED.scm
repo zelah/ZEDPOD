@@ -1722,14 +1722,14 @@ comment:
 "#t"
 (005) "let*" "((i" "(open-input-file" 
                      "(ZEDGAMBIT1))))"
-      (002) "read-all!" "i"
+      (002) "ZEDread-all!" "i"
  
 (c2)
 comment:
 "#t"
 (005) "let*" "((i" "(open-input-file" 
                      "(ZEDGAMBIT2))))"
-      (002) "read-all!" "i"
+      (002) "ZEDread-all!" "i"
  
 (g1)
 comment:
