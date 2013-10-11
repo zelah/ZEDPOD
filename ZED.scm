@@ -1720,13 +1720,15 @@ comment:
 (c1)
 comment:
 "#t"
-(005) "let*" "((i" "(open-input-file" "(GAMBIT1))))"
+(005) "let*" "((i" "(open-input-file" 
+                     "(ZEDGAMBIT1))))"
       (002) "read-all!" "i"
  
 (c2)
 comment:
 "#t"
-(005) "let*" "((i" "(open-input-file" "(GAMBIT2))))"
+(005) "let*" "((i" "(open-input-file" 
+                     "(ZEDGAMBIT2))))"
       (002) "read-all!" "i"
  
 (g1)
