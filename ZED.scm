@@ -1,4 +1,19 @@
 ;;; ZED.scm
+
+(by-four) "sentences"
+comment:
+(002) "null?" "sentences"
+nil
+
+(by-four) "sentences"
+comment:
+"#t"
+(003) "cons" (005) "list"
+                   (002) "car" "sentences"
+                   (002) "cadr" "sentences"
+                   (002) "caddr" "sentences"
+                   (002) "cadddr" "sentences"
+             (by-four) (002) "cddddr" "sentences"
  
 (comp1baaa) "gambit" "programized"
 comment:
@@ -66,8 +81,8 @@ comment:
                      (combine-program-clauses)
                      (by-three)
                      (debug-sentences)
-          (function-sort)
                      (discard-comments)
+          (function-sort)
                      (sentences)
                      (leading-newline)
                      (space-newline)
@@ -111,8 +126,8 @@ comment:
                      (combine-program-clauses)
                      (by-three)
                      (read-sentences)
-          (function-sort)
                      (discard-comments)
+          (function-sort)
                      (sentences)
                      (leading-newline)
                      (space-newline)
@@ -221,7 +236,7 @@ comment:
 (rd) nil 
      "append"
      (sort) clause-less?
-            (by-three) "sentences"
+            (by-four) "sentences"
  
 (clause-less?) "clause1" "clause2"
 comment:
